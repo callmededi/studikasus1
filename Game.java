@@ -17,6 +17,18 @@ public class Game {
 
     public Player getPlayer2() {
         return player2;
+    }
 
+    public void setPlayer2(Player player2) {
+        this.player2 = player2;
+    }
+
+    public void hitungpayoff() {
+        if (this.player1.getStrategi()==0) {
+            if (this.player2.getStrategi()==0) {
+                this.player1.setSkor(8);
+                this.player2.setSkor(8);
+            }
+        }
     }
 }
